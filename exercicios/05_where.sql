@@ -1,0 +1,3 @@
+-- LISTA DE TRANSACOES COM APENAS 01 PONTO;
+
+SELECT * FROM transacoes WHERE QtdePontos = 1
