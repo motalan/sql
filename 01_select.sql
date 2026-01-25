@@ -1,0 +1,7 @@
+/* SELECT É UM COMANDO QUE SELECIONA COISAS */
+/* '*' SELECIONA TODAS AS INFOS DA TABELA */
+
+SELECT 
+    idCliente, 
+    QtdePontos 
+FROM clientes
