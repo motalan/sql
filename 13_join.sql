@@ -1,0 +1,21 @@
+-- FUNCIONA COMO O PROCV DO EXCEL
+-- JOIN X ON Y=Z
+-- PODE SE USAR O USING PARA CONECTAR AS TABELAS CASO O NOME DA COLUNA SEJA A MESMA EM AMBAS
+-- LEFT (TBL DA ESQUERDA É A REFERENCIA) / RIGHT (TBL DA DIREITA É A REFERENCIA) / INNER (TRAZ APENAS OS VALORES QUE DÃO MATCH) / FULL (TRAZ TODOS OS DADOS DAS DUAS TABELAS)
+
+/* 
+UMA DAS MANEIRAS DE SE FAZER O SELECT
+
+SELECT 
+    *
+FROM transacao_produto
+LEFT JOIN produtos
+    ON transacao_produto.IdProduto = produtos.IdProduto
+*/
+
+SELECT 
+    transacao_produto.*,
+    produtos.DescNomeProduto
+FROM transacao_produto
+LEFT JOIN produtos
+    USING (IdProduto)
